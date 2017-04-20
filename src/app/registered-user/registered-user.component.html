@@ -1,0 +1,12 @@
+<h3 class="title">Lista de usuarios registrados</h3>
+<ul class="list-group">
+  <li *ngFor="let user of users" class="list-group-item">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        Nombre de usuario: {{user.name}}
+      </div>
+    </div>
+    <button class="btn btn-success">Modificar</button>
+    <button class="btn btn-danger">Eliminar</button>
+  </li>
+</ul>
